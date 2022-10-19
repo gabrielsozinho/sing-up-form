@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/index.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
     <title>SecuPro</title>
 </head>
 <body class="h-100">
@@ -21,23 +22,51 @@
         <div class="cola container text-container">
             <div class="text"><p class="text-desc">This is not a real service. Do excepteur eu nulla quis mollit et aute exercitation laboris velit Lorem ad. Culpa ut mollit nisi nisi cupidatat officia in aliqua magna commodo.</p></div>
             <div class="form">
-                <form>
+                <form action='' id="form">
                     <div class="rowa">
-                        <div>
-                            <p>First name: </p>
-                            <input type="text" name="first-name" id="first-name">
+                        <div class="container-input">
+                            <p class="label-text">First name</p>
+                            <input type="text" name="first-name" id="first-name" required>
                         </div>
                         
 
-                        <div>
-                            <p>Last name: </p>
-                            <input type="text" name="last-name" id="last-name">
+                        <div class="container-input">
+                            <p class="label-text">Last name</p>
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
-                        
-                    </fieldset>
+                    </div>    
+                    
+                    <div class="rowa">
+                        <div class="container-input">
+                            <p class="label-text">Email</p>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="container-input">
+                            <p class="label-text">Phone number</p>
+                            <input type="tel" name="phone-number" id="phone-number" required>
+                        </div>
+                    </div>
+
+                    <div class="rowa">
+                        <div class="container-input">
+                            <p class="label-text">Password</p>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="container-input">
+                            <p class="label-text">Confirm password:</p>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <button type="submit" class="btn btn-success">Create account</button>
                 </form>
+
+                <p class="already">Already have an account? <a href="#login" class="login">Log in</a></p>
             </div>
         </div>
     </div>
+    <script src="./src/index.js"></script>
 </body>
 </html>
