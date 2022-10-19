@@ -9,3 +9,5 @@ form.addEventListener('submit', e => {
     if (passwordInput.value !== passwordConfirmInput.value) {
         alert("Passwords do not match")}
 })
+
+
