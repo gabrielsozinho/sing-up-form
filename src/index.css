@@ -1,0 +1,38 @@
+.rowa{
+    display: flex;
+}
+
+.logo{
+    width: max(60px, 40px);
+    height: max(60px, 40px);
+    margin-right: 20px;
+
+}
+
+.title{
+    margin-top: 45vh;
+    filter: blur(50%);
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.background-image{
+    background: url(./background.avif);
+    background-position: top center;
+    background-size: cover;
+    width: 30%;
+    padding: 0;
+}
+
+.text-container{
+    width: 70%;
+}
+
+@media screen {
+    
+}
